@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Zetian Wu is an AI researcher working on multimodal generative models, multilingual AI, and LLM reasoning.">
+  <meta name="description" content="Zetian Wu is a 2027 PhD candidate at Oregon State University working on LLM post-training, agent evaluation, and multimodal generation, with research experience at Genies and Amazon.">
   <meta name="author" content="Zetian Wu">
   <meta name="theme-color" content="#fbfaf7">
   <meta property="og:title" content="Zetian Wu — AI Researcher">
-  <meta property="og:description" content="Research in multimodal generative models, multilingual AI, and LLM reasoning.">
+  <meta property="og:description" content="LLM post-training, agent evaluation, and multimodal generation. OSU PhD candidate seeking full-time research and engineering roles in 2027.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://neal-ztwu.github.io/">
   <title>Zetian Wu — AI Researcher</title>
@@ -49,15 +49,17 @@
 
   <main id="main">
     <section class="intro container" id="top">
-      <p class="label">PhD candidate / AI researcher</p>
-      <h1>Multimodal generative models, multilingual AI, and LLM reasoning.</h1>
+      <p class="label">PhD candidate · 2027 / AI researcher</p>
+      <h1>LLM post-training, agent evaluation, and multimodal generation.</h1>
       <p class="lede">
         I am a PhD candidate in Computer Science and Artificial Intelligence at
         <a href="https://oregonstate.edu/">Oregon State University</a>, advised by
-        <a href="https://web.engr.oregonstate.edu/~huanlian/">Liang Huang</a>. My research uses
-        sign-language translation and structured 3D human motion as demanding settings for
-        multilingual generation, streaming inference, and evaluation. I have also worked on
-        long-context multimodal models and text-to-SQL at Amazon and Genies.
+        <a href="https://web.engr.oregonstate.edu/~huanlian/">Liang Huang</a> and co-advised by
+        <a href="https://web.engr.oregonstate.edu/~leestef/">Stefan Lee</a>.
+        At Genies, I worked on GRPO post-training, text-to-SQL evaluation, and diagnosing
+        failures in multi-turn tool use; at Amazon, I researched multimodal generation and
+        cross-lingual retrieval. My PhD research connects synthetic data, multilingual
+        generation, and streaming evaluation through sign-language translation and 3D human motion.
       </p>
       <p class="availability">Seeking full-time Research Scientist, Applied Scientist, Research Engineer, and ML Engineer roles starting in 2027.</p>
       <div class="links" aria-label="Profile links">
@@ -79,8 +81,8 @@
         <div class="work-meta">2026 · Preprint</div>
         <div>
           <h3><a href="https://arxiv.org/abs/2605.20588">Direct Translation between Sign Languages</a></h3>
-          <p>Direct ASL, CSL, and DGS translation without a spoken-text pivot. The system uses 112K cross-lingual pairs and a shared motion representation, reducing mean motion error by 19% and running 2.3× faster than a three-stage cascade.</p>
-          <p class="methods">Multilingual generation · mBART · VQ-VAE · synthetic data · evaluation</p>
+          <p>Built direct ASL/CSL/DGS translation without a spoken-text pivot at inference and created 112K cross-lingual pairs through back-translation. On held-out back-translated inputs across six directions, reduced mean motion error (DTW-PA-MPJPE) by 19% and achieved 2.3× faster single-GPU inference than a three-stage cascade.</p>
+          <p class="methods">Synthetic data &amp; curation · multilingual generation · mBART · VQ-VAE</p>
         </div>
       </article>
 
@@ -88,8 +90,8 @@
         <div class="work-meta">To NAACL 2027</div>
         <div>
           <h3>Simultaneous Translation between Sign Languages</h3>
-          <p>Streaming sign-to-sign generation with prefix training and wait-k decoding. The approach cuts computation-aware latency by 38% while making the quality–latency trade-off explicit.</p>
-          <p class="methods">Streaming decoding · SMPL-X · wait-k · multi-path training</p>
+          <p>Built streaming sign-to-sign generation and proposed CA-Stream-AL to measure computation-aware latency. Reduced latency by 38% versus full-sentence decoding, with 9% higher motion error (DTW-PA-MPJPE) and 2.1 points lower BLEU-4.</p>
+          <p class="methods">Evaluation design · streaming inference · wait-k · multi-path training</p>
         </div>
       </article>
 
@@ -97,7 +99,7 @@
         <div class="work-meta">2025 · Preprint</div>
         <div>
           <h3><a href="https://arxiv.org/abs/2509.23011">Geometry-Aware Text-to-Sign Generation</a></h3>
-          <p>Variable-length 3D sign generation with geometry-aware objectives for articulated hands and consistent skeletons. The model improves back-translation BLEU-4 by 3.08 points on PHOENIX14T development data.</p>
+          <p>Built variable-length 3D sign generation with geometry-aware objectives for articulated hands and consistent skeletons. Reached 14.22 back-translation BLEU-4 on PHOENIX14T development data, 3.08 points above the XLM-R baseline.</p>
           <p class="methods">3D human motion · XLM-R · OpenPose · inverse kinematics</p>
         </div>
       </article>
@@ -112,7 +114,7 @@
       <div class="experience-list">
         <article>
           <p class="date">2024–2025</p>
-          <div><h3>Research Scientist Intern · Genies</h3><p>Built an LLM-based user-insight system and explored GRPO and MCTS-guided reasoning for text-to-SQL.</p></div>
+          <div><h3>Research Scientist Intern · Genies</h3><p>Built an LLM user-insight application and ran GRPO post-training experiments for text-to-SQL. Turned product requirements into evaluation cases that check semantic correctness beyond successful SQL execution. Diagnosed model, tool, and execution-environment failures from multi-turn database/SQL traces, refined interfaces and feedback, and reran failing and previously passing cases. Built reproducible data, distributed-training, checkpoint, and evaluation workflows with DeepSpeed, Hugging Face Accelerate, and Docker.</p></div>
         </article>
         <article>
           <p class="date">2023</p>
@@ -146,8 +148,8 @@
     </section>
 
     <section class="about container">
-      <p><strong>Education.</strong> PhD, Oregon State University · MSE, Johns Hopkins University · BS, Zhejiang University.</p>
-      <p><strong>Tools.</strong> Python, PyTorch, Hugging Face, SQL, C/C++, multi-GPU training, LLM post-training, multimodal learning, and 3D human motion.</p>
+      <p><strong>Education.</strong> PhD candidate, Oregon State University (expected 2027) · MSE, Johns Hopkins University · BS, Zhejiang University.</p>
+      <p><strong>Tools.</strong> Python, SQL, PyTorch, Hugging Face Transformers &amp; Accelerate, DeepSpeed, and Docker.</p>
     </section>
   </main>
 
